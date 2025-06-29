@@ -1,0 +1,82 @@
+/* style.css - gaya mirip Shopee */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: #ff5722;
+  color: white;
+  padding: 20px 10px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.product {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.product:hover {
+  transform: translateY(-4px);
+}
+
+.product img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.product .info {
+  padding: 10px;
+}
+
+.product h3 {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #111;
+}
+
+.product p {
+  margin: 5px 0;
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+.btn {
+  background: #ff5722;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #e64a19;
+}
